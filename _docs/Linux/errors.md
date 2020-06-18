@@ -1,7 +1,7 @@
 ---
 title: Errors
 category: Linux
-order:2
+order: 1
 ---
 
 
