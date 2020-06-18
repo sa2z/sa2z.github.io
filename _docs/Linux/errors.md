@@ -7,7 +7,7 @@ order: 1
 
 # Ubuntu USB ethernet error 
 > "activation of network connection failed"
-  - Get system info
+- Get system info
     ```
     $ inxi -Fxz
     ```
