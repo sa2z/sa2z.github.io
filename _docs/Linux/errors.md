@@ -9,8 +9,8 @@ order: 1
 > "activation of network connection failed"
 - Get system info
     ```
-    $ inxi -Fxz
-    ```
+    $ inxi -Fxz```
+    
     
     ```
     # show Network info
