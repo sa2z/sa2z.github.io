@@ -1,3 +1,10 @@
+---
+title: Errors
+category: Linux
+order:2
+---
+
+
 # Ubuntu USB ethernet error : "activation of network connection failed"
   ```
   
