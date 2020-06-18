@@ -1,4 +1,4 @@
-# Ubuntu USB ethernet error : "activation network failed"
+# Ubuntu USB ethernet error : "activation of network connection failed"
   ```
   $ ifconfig
   $ iwconfig
