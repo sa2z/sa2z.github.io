@@ -11,6 +11,7 @@ order: 1
     ```
     $ inxi -Fxz
     ```
+    
     ```
     # show Network info
       $ iwconfig
