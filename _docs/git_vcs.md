@@ -24,7 +24,8 @@
   2) 필요,불필요 요소정의 (Tracked, Untracked)
   ```
 
-
+자원사용량 모니터링 : netdata
+devops : circleCI
 클라우드 컨테이너 개발환경 생성 : groom
 github 블로그 수정 : prose.io
 루비 : https://www.ruby-lang.org/ko/documentation/installation/
