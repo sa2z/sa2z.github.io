@@ -9,7 +9,7 @@
       - Subversion(SVN) : CVCS 대표 시스템, 파일 모든변경사항 저장
     - 분산 버전 관리 시스템(DVCS) : 로컬,서버간 참조가능
     - 파일을 추적하지않고, 문자와 줄 단위 추적
-    - git GUI : sourcetree,
+    - git GUI : sourcetree,gitk
   
 > 상태
   - Unmodified : 이전버전과 비교하여 수정된 부분이 없는상태
@@ -23,3 +23,11 @@
     $ git init
   2) 필요,불필요 요소정의 (Tracked, Untracked)
   ```
+
+
+클라우드 컨테이너 개발환경 생성 : groom
+github 블로그 수정 : prose.io
+루비 : https://www.ruby-lang.org/ko/documentation/installation/
+깃헙메뉴얼 : https://git-scm.com/book/ko/v2
+
+참고 :https://theorydb.github.io/envops/2019/05/04/envops-blog-posting-prose-io/
