@@ -5,25 +5,22 @@ order: 1
 ---
 
 
-# Ubuntu USB ethernet error 
-> "activation of network connection failed"
+> Ubuntu USB ethernet error 
+  "activation of network connection failed"
 - Get system info
     ```
-    $ inxi -Fxz```
-    
-    
-    ```
+    # HW info
+      $ inxi -Fxz
+      $ lspci
+      $ mokutil --sb-state
+      
     # show Network info
       $ iwconfig
       $ ifconfig -a
-
-    # HW info
-      $ lspci
-      $ mokutil --sb-state
-
+    ```
+- Control system
+    ```  
     # sudo iwconfig wlp59s0 power off
-
-
 
     # power manager off
       $ sudo mkdir -p /etc/pm/power.d
