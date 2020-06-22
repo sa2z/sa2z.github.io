@@ -2,6 +2,7 @@
 title: Docker Usage
 category: Docker
 order: 1
+published: true
 ---
 
 ## Make docker images as a file
@@ -24,6 +25,6 @@ order: 1
 |cmd|source|output|target|
 |:---:|:---|:---|:---|
 |'save'| container |.tar | container file system | 
-|'load' |.tar| 'docker image'+\n+'(layer)'| flat file system |
-|'export'| container | 'docker image'+\n+'(include history)' |.tar |
-|'import' |.tar| 'docker image'\n+'(include history)' |'docker image \n (layer)' |
+|'load' |.tar| docker image (layer)| flat file system |
+|'export'| container | docker image (include history) |.tar |
+|'import' |.tar| docker image (include history) |docker image (layer) |
