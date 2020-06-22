@@ -6,7 +6,8 @@ order: 1
 
 
 > Ubuntu USB ethernet error 
-  "activation of network connection failed"
+- Error Msg \
+  ```"activation of network connection failed"```
 - Get system info
     ```
     # HW info
