@@ -21,9 +21,9 @@ order: 1
 # docker import ( tar -> docker image)
     $ docker import {file/url}
 ```
-cmd|source|output|target
----|:---|:---|:---
-'save'| container |.tar | container file system 
-'load' |.tar| 'docker image'+\n+'(layer)'| flat file system
-'export'| container | 'docker image'+\n+'(include history)' |.tar
-'import' |.tar| 'docker image'\n+'(include history)' |'docker image \n (layer)' 
+|cmd|source|output|target|
+|:---:|:---|:---|:---|
+|'save'| container |.tar | container file system | 
+|'load' |.tar| 'docker image'+\n+'(layer)'| flat file system |
+|'export'| container | 'docker image'+\n+'(include history)' |.tar |
+|'import' |.tar| 'docker image'\n+'(include history)' |'docker image \n (layer)' |
