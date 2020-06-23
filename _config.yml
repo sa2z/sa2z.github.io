@@ -21,7 +21,7 @@ social:
 
 # -----
 # Build
-
+markdown: kramdown
 timezone: Etc/UTC
 
 permalink: pretty
