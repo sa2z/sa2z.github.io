@@ -9,7 +9,7 @@
   - git added files
   
   $ git stash
-  $ git stash save
+  $ git stash save [stash_name]
 ```
 - Usage
 
