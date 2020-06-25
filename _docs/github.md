@@ -1,7 +1,7 @@
 
 
 # git stash
-- tmporary save modified source code
+- Temporary save modified source code
 ```
 1) modified & tracked files
   - tracked file(already committed)
