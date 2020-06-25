@@ -1,3 +1,9 @@
+---
+title: Github
+category: Linux
+order: 2
+---
+
 
 # github(version control system) 
   - ref : https://www.youtube.com/watch?v=YQat_D1C-ps
