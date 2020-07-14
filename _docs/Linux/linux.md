@@ -29,3 +29,32 @@
   - 배포버전 :Major.Minor.Patch - Trusty(14.xx)-Xenial(16.xx)-Bionix(18.xx)-Eoan(19.xx) 홀수-최신기능(플래그쉽) 짝수-안정성, LTS(5년간 보안지원)  
   - 미러사이트(중계다운) : https://kr.archive.ubuntu.com/ubuntu , https://mirror.kakao.com/ubuntu-release/xenial
   - 가상환경(Virtual
+
+
+# 계정작업
+  ```
+  # 계정생성
+    $ sudo adduser {user_name}
+  
+  # 그룹에 추가
+    $ sudo usermod -aG {group} {user_name}
+  
+  # 경로권한 변경 (xxx user/group/other , x = rwx(2) )
+    $ sudo chmod -R xxx {path}
+  
+  # 경로소유권 변경
+    $ sudo chown -R {group}:{user} {path}
+    
+  # 계정설정확인(비밀번호 변경시기,비밀번호 만기일 등)
+    $ sudo chage -l {user_name}
+    
+  # 비밀번호 변경
+    $ su - {user} // user 터미널진입
+    $ passwd
+  ```
+  
+  
+  
+  
+  
+  
