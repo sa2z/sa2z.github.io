@@ -51,6 +51,8 @@
   # 비밀번호 변경
     $ su - {user} // user 터미널진입
     $ passwd
+    
+  - ref : http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/chmod
   ```
   
   
