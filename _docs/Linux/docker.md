@@ -50,6 +50,9 @@ published: true
     
     # assign docker command permission to other users 
     $ sudo chmod 666 /var/run/docker.sock
-
-
+    
+    # docker gpu connection test
+    $ docker run --gpus all nvidia/cuda:10.0-base nvidia-smi
+    + could not select device driver "" with capabilities:[[gpu]]
+    
     ```
