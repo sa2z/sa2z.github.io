@@ -65,3 +65,13 @@ published: true
     
     
     ```
+    
+# Check docker network
+    [bridges]$ docker network ls
+    # create network bridge
+    $ docker network create {bridge_name} --driver bridge
+    # connect to bridge network
+    $ docker network connect {bridge_name} {container_name}
+    []$ ifconfig> docker0
+    [inspect]$ docker network inspect bridge, $ docker inspect {container_name} |  jq -r  ' [0].NetworkSettings.IPAddress'
+    
