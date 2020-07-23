@@ -6,4 +6,8 @@
     - $ docker pull tensorflow/tensorflow:latest-gpu-jupyter  # latest release w/ GPU support and Jupyter
     
 # run docker
+  $ docker run --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=6,7 -it --rm --name tf_robot --net=host -p 8890:8888 -v /code:/code tensorflow/tensorflow:latest-gpu-jupyter 
   $ docker run --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=6,7 -it --rm --name tf_robot --net=host -p 8890:8888 -v /code:/code tensorflow/tensorflow:devel-gpu  
+  
+# open jupyter 
+  $ jupyter lab --ip 0.0.0.0 --allow-root
