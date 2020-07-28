@@ -55,8 +55,41 @@
   - ref : http://www.incodom.kr/Linux/%EA%B8%B0%EB%B3%B8%EB%AA%85%EB%A0%B9%EC%96%B4/chmod
   ```
   
+# Samba
   
+  - 설치
+  ```
+  $ apt-get install samba
+  $ apt-get install 
+  ```
   
+  - 설정
+  ```
+  # Samba 용 계정생성
+    $ sudo adduser {user_name}
+  # Samba 사용 등록
+    $ sudo smbpasswd -a {user_name}
+ 
+  # 경로등록
+  $ sudo nano /etc/samba/smb.conf
+  >>> 맨아래 경로정보 작성
+  [path_name]
+  comment = poc image directory
+  path = /home/test/data # server dir
+  valid users = {samba_user}
+  writeable = yes
+  read only = no
+  guest ok = yes
+  create mode = 0777
+  directory mask = 0777
+  browsable = yes
+  public = no
+  ```
+  
+  - 재시작
+  ```
+  $ sudo service smbd restart
+  ```
   
   
   
