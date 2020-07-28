@@ -58,10 +58,10 @@
 # Samba
   
   - 설치
-  ```
-  $ apt-get install samba
-  $ apt-get install 
-  ```
+    ```
+    $ apt-get install samba
+    $ apt-get install 
+    ```
   
   - 설정
   ```
@@ -71,21 +71,20 @@
     $ sudo smbpasswd -a {user_name}
  
   # 경로등록
-  $ sudo nano /etc/samba/smb.conf
-  >>> 맨아래 경로정보 작성
-  [path_name]
-  comment = poc image directory
-  path = /home/test/data # server dir
-  valid users = {samba_user}
-  writeable = yes
-  read only = no
-  guest ok = yes
-  create mode = 0777
-  directory mask = 0777
-  browsable = yes
-  public = no
+    $ sudo nano /etc/samba/smb.conf
+      >>> 맨아래 경로정보 작성
+        [path_name]
+        comment = poc image directory
+        path = /home/test/data # server dir
+        valid users = {samba_user}
+        writeable = yes
+        read only = no
+        guest ok = yes
+        create mode = 0777
+        directory mask = 0777
+        browsable = yes
+        public = no
   ```
-  
   - 재시작
   ```
   $ sudo service smbd restart
