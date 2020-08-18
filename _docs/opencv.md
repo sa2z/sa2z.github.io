@@ -263,3 +263,27 @@ ref : [tacademy.skplanet.com](http://tacademy.skplanet.com) → OpenCV
                     - ddepth : 출력 블롭 깊이 CV_32F or CV_8U 기본값=CV_32F
                     - retval : 영상에서 구한 블록 객체
                 -
+                
+# Install OpenCV on Ubuntu18.04
+    - OpenCV only for python : pip3 install opencv-contrib-python
+    - OpenCV with nonfree modules : make -> build -> compile -> install on OS 
+    
+    ```
+    # check installed version
+        $ pkg-config --modversion opencv -> $ sudo apt-get install pkg-config
+    
+    # install packages
+        # base
+            $ apt-get install build-essential cmake pkg-config
+            ?? /sbin/ldconfig.real : File /usr/lib/x86_64-linux-gnu/libnvidia..etc is empty, not checked  
+            - build-essential : C/C++ 컴파일러, make도구 등
+            - cmake : 컴파일옵션, 빌드될 라이브러리에 포함시킬 opencv 모듈설정
+            - pkg-config : 컴파일&링크시 필요한 라이브러리정보를 메타파일(.pc)로부터 가져옴
+        # images
+            $ apt-get install libjpeg-dev libtiff5-dev libpng-dev : 특정포맷의 이미지 핸들링
+            $ apt-get install libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev : 특정코덱의 비티오파일 핸들링
+            $ apt-get install libv4l-dev v4l-utils : video4linux - 릭눅스 내 실시간 비디오 캡처 지원
+            $ apt-get install libgstreamer1.0-dev libgstreamer-plugin-base1.0-dev : gstreamer - 비디오 스트리밍
+            $ apt-get install libgtk2.0-dev : highgui로 자체 윈도우 생성&표기 가능
+    
+    ```
