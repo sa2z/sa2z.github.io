@@ -34,4 +34,10 @@
   - 리눅스배포판구성 : Linux 커널 + Desktop UI + Utilities
   - 배포판선택 : 상업/비상업, 기업/개인, 하드웨어벤더인증, 서버/데스크탑/임베디드/특수목적, 특정산업군,보안/안정/이식성, 
   
-  
+  - Desktop Environment
+    - GNOME(GNU Network Object Model Environment) : 손쉬운사용, GNU계열, / 도구 : GTK+,Unity
+    - KDE(K-Desktop Environment) : 다중플랫폼 호환(Linux,FreeBSD, Windows,Solaris,MAC 등) / 도구 : QT,Piasma
+    - XFce(XForms Common Environment) : 2D lightweight(오래된 HW도 지원하기 위해 저사양사용가능한)
+    - LXDE(Lightweight X11 Desktop Environment : Minimalistic Desktop Environment
+  - 운영체제 : 시스템하드웨어 관리,응용소프트웨어 실행 -> 하드웨어 추상화 플랫폼,공통시스템서비스 제공하는 시스템소프트웨어
+  - 커널 : 운영체제의 핵심프로그램, 시스템모든것을 통제 https://makelinux.github.io/kernel/map/
