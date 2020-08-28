@@ -40,4 +40,30 @@
     - XFce(XForms Common Environment) : 2D lightweight(오래된 HW도 지원하기 위해 저사양사용가능한)
     - LXDE(Lightweight X11 Desktop Environment : Minimalistic Desktop Environment
   - 운영체제 : 시스템하드웨어 관리,응용소프트웨어 실행 -> 하드웨어 추상화 플랫폼,공통시스템서비스 제공하는 시스템소프트웨어
-  - 커널 : 운영체제의 핵심프로그램, 시스템모든것을 통제 https://makelinux.github.io/kernel/map/
+  - 커널 : 운영체제의 핵심프로그램, 시스템모든것을 통제 https://makelinux.github.io/kernel/map/ 
+  
+  - 가상환경 : virtualbox(오픈소스), vmware(개인무료), ms hyper-V(win pro이상), 웹터미널 cocalc / https://codepen.io/z-/pen/eJNgWO
+  - 가상환경 네트워크 
+    - NAT(가상머신 내부 네트워크에서 Host PC 외부네트워크 단방향 연결(Host내부네트워크와 통신불가)
+    - 어댑터에 브리지 : 호스트 PC와 동등하게 외부 네트워크와 연결(IP할당 외부로부터 받음)
+    - 내부네트워크 : Host 내부 네트워크와만 통신가능
+    - 호스트전용 : Host와 내부 네트워크와만 통신가능(외부 네트워크와 단절)
+    - 일반드라이버 : 거의 미사용(UDP 터널네트워크 등)
+    - NAT 네트워크 : NAT+Host내부네트워크 통신가능
+    - 연결되지않음 : 네트워크미사용
+  - 원격접속 : putty
+    - 피원격서버 : [원격설치] $ apt install openssh-server
+                  [원격실행] $ sudo service sshd start
+                  [원격확인] $ sudo service sshd status
+                  [IP확인] $ ifconfig > NAT 외부에서 들어오지못함
+                  [핑확인] $ ping {IP}
+                  [라우터테이블] $ route print
+                  - 포트포워딩 :호스트 내부네트워크의 포트로 접속
+  # 우분투 GUI
+    - Desktop, Server 버전
+    - GNOME 메뉴바,좌측런처,검색기(고정)
+    - chrome 설치파일 .deb 다운 -> 설치 $ dpkg -i google~.deb 
+    - 문서 : OpenOffice(Apache), LibreOffice(Document Foundation)
+    - software update -> UbuntuOS,기타,업데이트,드라이버 등 설치가능
+    - 추가환경설정 도구설치 : $ apt install unity-tweak-tool gnome-tweak-tool tweaks // compiz fusion
+    - 
