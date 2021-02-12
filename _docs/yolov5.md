@@ -6,3 +6,10 @@
   - https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
   - organize dataset
     - {dataset name}/{images/labels}/{train|val}/{image name.jpg}
+
+# yaml
+  - set dataset path in yaml file 
+
+# train
+  $ python train.py --img 640 --batch 8 --epochs 5 --data coco128_test.yaml --weights yolov5s.pt
+  
